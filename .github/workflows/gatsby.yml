@@ -34,11 +34,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: dev
+    env: 
+      API_KEY: ${{ secrets.API_KEY }}
+      API_KEY_PUBLIC: ${{ vars.API_KEY_PUBLIC }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Print API_KEY
-        run: echo "API_KEY_PUBLIC ${{ vars.API_KEY_PUBLIC }}"
+        run: echo "API_KEY_PUBLIC $API_KEY_PUBLIC"
       - name: Detect package manager
         id: detect-package-manager
         run: |
