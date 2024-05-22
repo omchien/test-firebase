@@ -14,13 +14,19 @@ function App() {
     { key: 'REACT_APP_DATABASE_URL', value: process.env.REACT_APP_DATABASE_URL },
   ];
   return (
-    <div className="App">
-      Config keys 123:
-      <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '100px',
+        textAlign: 'start',
+      }}
+    >
+      <h3 style={{ marginBottom: '10px' }}>Config keys:</h3>
+      <div style={{}}>
         {configKeys.map((item) => (
-          <div>
-            `${item.key}: ${item.value}`
-          </div>
+          <div style={{ margin: '10px 0' }}>{`${item.key}: ${item.value}`}</div>
         ))}
       </div>
     </div>
