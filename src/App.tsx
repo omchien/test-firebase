@@ -2,7 +2,10 @@ import './App.css';
 
 import React from 'react';
 
+import { db } from './components/firebase/firebase';
+
 function App() {
+  console.log(db);
   const configKeys = [
     { key: 'REACT_APP_API_KEY', value: process.env.REACT_APP_API_KEY },
     { key: 'REACT_APP_AUTH_DOMAIN', value: process.env.REACT_APP_AUTH_DOMAIN },
