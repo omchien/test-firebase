@@ -16,7 +16,13 @@ function App() {
   return (
     <div className="App">
       Config keys:
-      {configKeys.map((item) => `${item.key}: ${item.value}`)}
+      <div>
+        {configKeys.map((item) => (
+          <div>
+            `${item.key}: ${item.value}`
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
