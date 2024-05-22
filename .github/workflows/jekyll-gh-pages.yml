@@ -32,7 +32,7 @@ jobs:
       - name: Print API_KEY
         run: echo "API_KEY ${{secrets.API_KEY}}"
       - name: Print API_KEY_PUBLIC
-        run: echo "API_KEY_PUBLIC ${{vars.API_KEY}}"
+        run: echo "API_KEY_PUBLIC ${{vars.API_KEY_PUBLIC}}"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
