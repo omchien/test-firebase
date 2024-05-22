@@ -38,7 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Print API_KEY
-        run: echo "API_KEY_PUBLIC ${{secrets.API_KEY}}"
+        run: echo "API_KEY ${{secrets.API_KEY}}"
       - name: Print API_KEY_PUBLIC
         run: echo "API_KEY_PUBLIC ${{vars.API_KEY_PUBLIC}}"
       - name: Detect package manager
