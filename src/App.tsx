@@ -16,6 +16,7 @@ function App() {
     { key: 'REACT_APP_MEASUREMENT_ID', value: process.env.REACT_APP_MEASUREMENT_ID },
     { key: 'REACT_APP_DATABASE_URL', value: process.env.REACT_APP_DATABASE_URL },
   ];
+
   return (
     <div
       style={{
@@ -26,7 +27,7 @@ function App() {
         textAlign: 'start',
       }}
     >
-      <h3 style={{ marginBottom: '10px' }}>Config keys:</h3>
+      <h3 style={{ marginBottom: '10px' }}>Config keys 123:</h3>
       <div style={{}}>
         {configKeys.map((item) => (
           <div style={{ margin: '10px 0' }}>{`${item.key}: ${item.value}`}</div>
